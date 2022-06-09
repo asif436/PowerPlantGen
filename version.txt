@@ -1,0 +1,44 @@
+Your environment has been set up for using Node.js 8.11.2 (x64) and npm.
+
+C:\Users\Asif>npm --version
+6.0.1
+
+C:\Users\Asif>node --version
+v8.11.2
+
+C:\Users\Asif>c\
+'c\' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Asif>cd \
+
+C:\>cd development\cloud\workspace
+
+C:\development\cloud\workspace>ng --version
+
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / ? \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+
+
+Angular CLI: 6.0.3
+Node: 8.11.2
+OS: win32 x64
+Angular:
+...
+
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.6.3
+@angular-devkit/core         0.6.3
+@angular-devkit/schematics   0.6.3
+@schematics/angular          0.6.3
+@schematics/update           0.6.3
+rxjs                         6.1.0
+typescript                   2.7.2
+
+
+C:\development\cloud\workspace>

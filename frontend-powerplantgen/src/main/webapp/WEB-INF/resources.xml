@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <Service id="json" class-name="com.pk.rpklawyers.config.CommListResources">
+        SkipJaxbChecks = true
+        DropRootElement = false
+        SupportUnwrapped = true
+        SingleJaxbContext = true
+        serializeAsArray = true
+    </Service>
+</resources>

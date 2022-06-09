@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd" >
+
+<hibernate-configuration>
+
+	<session-factory>
+		<!-- Database connection settings -->
+		<property name="hibernate.connection.driver_class">org.mariadb.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mariadb://localhost:3306/courtcasesschedlr?useSSL=false&amp;emulateLocators=false
+		</property>
+		<property name="hibernate.connection.username">crtcasesadmin</property>
+		<property name="hibernate.connection.password">Pass.Word2</property>
+
+
+		<!-- SQL dialect -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MariaDBDialect
+		</property>
+
+		<!-- Enable Hibernate's automatic session context management -->
+		<property name="hibernate.current_session_context_class">thread</property>
+
+		<!-- Disable the second-level cache -->
+		<property name="hibernate.cache.provider_class">org.hibernate.cache.internal.NoCacheProvider
+		</property>
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="hibernate.show_sql">true</property>
+
+		<!-- Drop and re-create the database schema on startup -->
+		<property name="hibernate.hbm2ddl.auto">none</property>
+		
+		<!-- for discriminator annotation 
+		<property name="hibernate.discriminator.ignore_explicit_for_joined">true</property>
+-->
+		<!-- mappings for annotated classes -->
+		<mapping class="com.pk.rpklawyers.common.entities.AttachmentType" />
+		<mapping class="com.pk.rpklawyers.common.entities.OrganizationBranch" />
+		<mapping class="com.pk.rpklawyers.common.entities.City" />
+		<mapping class="com.pk.rpklawyers.common.entities.Country" />
+		<mapping class="com.pk.rpklawyers.common.entities.CourtCaseDetail" />
+		<mapping class="com.pk.rpklawyers.common.entities.Courts" />
+		<mapping class="com.pk.rpklawyers.common.entities.LegalCaseStatus" />
+		<mapping class="com.pk.rpklawyers.common.entities.LegalCases" />
+		<mapping class="com.pk.rpklawyers.common.entities.LegalCasesCategory" />
+		<mapping class="com.pk.rpklawyers.common.entities.Organizations" />
+		<mapping class="com.pk.rpklawyers.common.entities.Passwords" />
+		<mapping class="com.pk.rpklawyers.common.entities.Profiles" />
+		<mapping class="com.pk.rpklawyers.common.entities.UserRole" />
+		<mapping class="com.pk.rpklawyers.common.entities.Judges" />
+		<mapping class="com.pk.rpklawyers.common.entities.Lawyers" />
+		<mapping class="com.pk.rpklawyers.common.entities.User" />		
+		<mapping class="com.pk.rpklawyers.common.entities.UsersUserRole" />
+		<mapping class="com.pk.rpklawyers.common.entities.UserTypes" />
+		<mapping class="com.pk.rpklawyers.common.entities.ClientsLawyer" />
+		<mapping class="com.pk.rpklawyers.common.entities.UserAccount" />
+		<mapping class="com.pk.rpklawyers.common.entities.Client" />
+		<mapping class="com.pk.rpklawyers.common.entities.RequestCaseTransfer" />
+		<mapping class="com.pk.rpklawyers.common.entities.LccLawyer" />
+		<mapping class="com.pk.rpklawyers.common.entities.LccOrganization" />
+		<mapping class="com.pk.rpklawyers.common.entities.ProvincesState" />
+		<mapping class="com.pk.rpklawyers.common.entities.Education" />
+		<mapping class="com.pk.rpklawyers.common.entities.Experience" />
+		<mapping class="com.pk.rpklawyers.common.entities.EducationType" />
+		<mapping class="com.pk.rpklawyers.common.entities.RequestSetupCourt" />
+		<mapping class="com.pk.rpklawyers.common.entities.CreditCard" />
+		<mapping class="com.pk.rpklawyers.common.entities.CounselRequests" />
+		<mapping class="com.pk.rpklawyers.common.entities.HearingDateRequestReason" />
+		<mapping class="com.pk.rpklawyers.common.entities.Employees" />
+		<mapping class="com.pk.rpklawyers.common.entities.CourtCaseDetailDefendant" />
+		<mapping class="com.pk.rpklawyers.common.entities.CourtCaseDetailPlaintiff" />
+		<mapping class="com.pk.rpklawyers.common.entities.OfficialHoliday" />
+		<mapping class="com.pk.rpklawyers.common.entities.StaffLeave" />
+		<mapping class="com.pk.rpklawyers.common.entities.LeaveTypes" />
+		<mapping class="com.pk.rpklawyers.common.entities.LawyerLegalCase" />
+		<mapping class="com.pk.rpklawyers.common.entities.LawyerCourtCaseDetail" />
+		<mapping class="com.pk.rpklawyers.common.entities.CourtCaseDetailAttachment" />
+		<mapping class="com.pk.rpklawyers.common.entities.DefendantCourtCaseAttachment" />
+		<mapping class="com.pk.rpklawyers.common.entities.LawyerCourtCaseDetailAttachment" />
+		<mapping class="com.pk.rpklawyers.common.entities.PlaintiffCourtCaseAttachment" />			
+	</session-factory>
+
+</hibernate-configuration>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+        
+    <wb-module deploy-name="backend-powerplantgen">
+                
+        <wb-resource deploy-path="/" source-path="/src/main/java"/>
+                
+        <wb-resource deploy-path="/" source-path="/ejbModule/META-INF"/>
+                
+        <wb-resource deploy-path="/" source-path="/ejbModule" tag="defaultRootSource"/>
+                
+        <wb-resource deploy-path="/" source-path="/src/test/java"/>
+        <wb-resource deploy-path="/" source-path="/resources"/>
+                
+        <property name="java-output-path" value="/powerplantgen-backend/target/classes"/>
+            
+    </wb-module>
+    
+</project-modules>

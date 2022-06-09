@@ -1,0 +1,64 @@
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="rpklawyers-backend" transaction-type="JTA">
+
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<jta-data-source>jdbc/crtcasesdb</jta-data-source>
+
+		<class>com.pk.rpklawyers.common.entities.City</class>
+		<class>com.pk.rpklawyers.common.entities.CourtCaseDetail</class>
+		<class>com.pk.rpklawyers.common.entities.Courts</class>
+		<class>com.pk.rpklawyers.common.entities.LegalCaseStatus</class>
+		<class>com.pk.rpklawyers.common.entities.LegalCases</class>
+		<class>com.pk.rpklawyers.common.entities.LegalCasesCategory</class>
+		<class>com.pk.rpklawyers.common.entities.OrganizationBranch</class>
+		<class>com.pk.rpklawyers.common.entities.Organizations</class>
+		<class>com.pk.rpklawyers.common.entities.Passwords</class>
+		<class>com.pk.rpklawyers.common.entities.Profiles</class>
+		<class>com.pk.rpklawyers.common.entities.Judges</class>
+		<class>com.pk.rpklawyers.common.entities.Lawyers</class>
+		<class>com.pk.rpklawyers.common.entities.User</class>
+		<class>com.pk.rpklawyers.common.entities.Client</class>
+		<class>com.pk.rpklawyers.common.entities.ClientsLawyer</class>
+		<class>com.pk.rpklawyers.common.entities.CounselRequests</class>
+		<class>com.pk.rpklawyers.common.entities.UserAccount</class>
+		<class>com.pk.rpklawyers.common.entities.UserRole</class>
+		<class>com.pk.rpklawyers.common.entities.UsersUserRole</class>
+		<class>com.pk.rpklawyers.common.entities.Country</class>
+		<class>com.pk.rpklawyers.common.entities.LccLawyer</class>
+		<class>com.pk.rpklawyers.common.entities.LccOrganization</class>
+		<class>com.pk.rpklawyers.common.entities.ProvincesState</class>
+		<class>com.pk.rpklawyers.common.entities.Education</class>
+		<class>com.pk.rpklawyers.common.entities.Experience</class>
+		<class>com.pk.rpklawyers.common.entities.EducationType</class>
+		<class>com.pk.rpklawyers.common.entities.RequestSetupCourt</class>
+		<class>com.pk.rpklawyers.common.entities.RequestCaseTransfer</class>
+		<class>com.pk.rpklawyers.common.entities.CreditCard</class>
+		<class>com.pk.rpklawyers.common.entities.Employees</class>
+		<class>com.pk.rpklawyers.common.entities.UserTypes</class>
+		<class>com.pk.rpklawyers.common.entities.HearingDateRequestReason</class>
+		<class>com.pk.rpklawyers.common.entities.CourtCaseDetailDefendant</class>
+		<class>com.pk.rpklawyers.common.entities.CourtCaseDetailPlaintiff</class>
+		<class>com.pk.rpklawyers.common.entities.OfficialHoliday</class>
+		<class>com.pk.rpklawyers.common.entities.StaffLeave</class>
+		<class>com.pk.rpklawyers.common.entities.LeaveTypes</class>
+		<class>com.pk.rpklawyers.common.entities.LawyerLegalCase</class>
+		<class>com.pk.rpklawyers.common.entities.LawyerCourtCaseDetail</class>
+		<class>com.pk.rpklawyers.common.entities.CourtCaseDetailAttachment</class>
+		<class>com.pk.rpklawyers.common.entities.DefendantCourtCaseAttachment</class>
+		<class>com.pk.rpklawyers.common.entities.LawyerCourtCaseDetailAttachment</class>
+		<class>com.pk.rpklawyers.common.entities.PlaintiffCourtCaseAttachment</class>
+		<class>com.pk.rpklawyers.common.entities.AttachmentType</class>					
+		<properties>
+			<property name="hibernate.transaction.factory_class"
+				value="org.hibernate.transaction.JDBCTransactionFactory" />
+	<!-- 		<property name="hibernate.transaction.manager_lookup_class"
+				value="org.hibernate.transaction.SunONETransactionManagerLookup" />
+			<property name="hibernate.transaction.jta.platform"
+				value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform" />
+-->
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MariaDBDialect" />
+			<property name="hibernate.current_session_context_class"  value="thread" />
+		</properties>
+				
+	</persistence-unit>
+</persistence>
